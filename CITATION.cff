@@ -18,7 +18,7 @@ keywords:
   - computational law
   - AI governance
 license: MIT
-repository-code: "https://github.com/REPLACE-WITH-ORG/runtime-admissibility-experiment"
+repository-code: "https://github.com/veraxis-protoco/runtime-admissibility-experiment"
 preferred-citation:
   type: article
   title: "Runtime Admissibility as a Computational Primitive for Institutional Reliance"
