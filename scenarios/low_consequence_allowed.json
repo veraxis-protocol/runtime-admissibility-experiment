@@ -1,0 +1,90 @@
+{
+  "action": {
+    "action_id": "low_consequence_allowed_action",
+    "amount": 100,
+    "consequence_class": "financial_low",
+    "counterparty": "counterparty_alpha",
+    "currency": "USD",
+    "type": "transaction_approval"
+  },
+  "classification_time": "t0",
+  "expected": {
+    "failed_predicates": [],
+    "failure_modes": [],
+    "runtime_decision": "APPROVE",
+    "static_decision": "APPROVE"
+  },
+  "reliance_time": "t2",
+  "scenario_id": "low_consequence_allowed",
+  "t0": {
+    "authority": {
+      "allowed_consequence_classes": [
+        "financial_regulatory",
+        "financial_low"
+      ],
+      "max_amount": 25000,
+      "permitted_action_types": [
+        "transaction_approval"
+      ],
+      "valid": true
+    },
+    "classification": "Permissible",
+    "correction": {
+      "available": true
+    },
+    "evidence": {
+      "contradicted": false,
+      "current": true,
+      "sufficient": true
+    },
+    "execution": {
+      "matches_evaluated_action": true
+    },
+    "institutional_state": {
+      "account_status": "active",
+      "counterparty_status": "clear",
+      "jurisdiction": "US",
+      "threshold_review_required": false
+    },
+    "recognized_consequence_classes": [
+      "financial_regulatory",
+      "financial_low"
+    ]
+  },
+  "t2": {
+    "authority": {
+      "allowed_consequence_classes": [
+        "financial_regulatory",
+        "financial_low"
+      ],
+      "max_amount": 25000,
+      "permitted_action_types": [
+        "transaction_approval"
+      ],
+      "valid": true
+    },
+    "classification": "Permissible",
+    "correction": {
+      "available": true
+    },
+    "evidence": {
+      "contradicted": false,
+      "current": true,
+      "sufficient": true
+    },
+    "execution": {
+      "matches_evaluated_action": true
+    },
+    "institutional_state": {
+      "account_status": "active",
+      "counterparty_status": "clear",
+      "jurisdiction": "US",
+      "threshold_review_required": false
+    },
+    "recognized_consequence_classes": [
+      "financial_regulatory",
+      "financial_low"
+    ]
+  },
+  "title": "Low consequence transaction remains admissible at reliance time."
+}

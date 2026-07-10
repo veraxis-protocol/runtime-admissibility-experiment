@@ -1,0 +1,30 @@
+{
+  "compatible_state": {
+    "description": "Action is compatible with current institutional state.",
+    "formal": "CS(x,S_t)"
+  },
+  "consequence_bounded": {
+    "description": "Consequence class is recognized and bounded.",
+    "formal": "CB(x,C)"
+  },
+  "correctable": {
+    "description": "Correction or challenge path remains available.",
+    "formal": "COR(x,C)"
+  },
+  "execution_integrity": {
+    "description": "Execution action matches evaluated action.",
+    "formal": "EI(x,t)"
+  },
+  "sufficient_evidence": {
+    "description": "Sufficient, current, non-contradicted evidence exists.",
+    "formal": "SE(x,E_t)"
+  },
+  "valid_authority": {
+    "description": "Valid authority exists for action x under current authority envelope.",
+    "formal": "VA(x,A_t)"
+  },
+  "within_scope": {
+    "description": "Action is within delegated scope for consequence class.",
+    "formal": "WS(x,A_t,C)"
+  }
+}

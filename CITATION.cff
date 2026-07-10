@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying paper and this software artifact."
+title: "Runtime Admissibility Experiment"
+type: software
+authors:
+  - family-names: Miteiko
+    given-names: Arkadiy
+    orcid: "https://orcid.org/0009-0009-1702-9380"
+  - family-names: Lerer
+    given-names: Ignacio Adrian
+    orcid: "https://orcid.org/0009-0007-6378-9749"
+year: 2026
+abstract: "A reproducible experiment demonstrating Dynamic Classification Failure and runtime admissibility as a computational predicate for institutional reliance."
+keywords:
+  - runtime admissibility
+  - institutional reliance
+  - Dynamic Classification Failure
+  - computational law
+  - AI governance
+license: MIT
+repository-code: "https://github.com/REPLACE-WITH-ORG/runtime-admissibility-experiment"
+preferred-citation:
+  type: article
+  title: "Runtime Admissibility as a Computational Primitive for Institutional Reliance"
+  authors:
+    - family-names: Miteiko
+      given-names: Arkadiy
+    - family-names: Lerer
+      given-names: Ignacio Adrian
+  year: 2026

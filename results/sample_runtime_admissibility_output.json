@@ -1,0 +1,73 @@
+{
+  "classification_time": "t0",
+  "reliance_time": "t2",
+  "runtime_admissibility_system": {
+    "decision": "ESCALATE",
+    "defective_reliance": false,
+    "defective_reliance_prevented": true,
+    "explanation": "one or more runtime predicates failed; review required",
+    "failed_predicates": [
+      "compatible_state"
+    ],
+    "failure_modes": [
+      "Reliance Without Admissibility",
+      "Context or State Incompatibility"
+    ],
+    "predicate_results": [
+      {
+        "name": "valid_authority",
+        "passed": true,
+        "reason": "current authority envelope permits action type"
+      },
+      {
+        "name": "sufficient_evidence",
+        "passed": true,
+        "reason": "evidence is sufficient, current, and not contradicted"
+      },
+      {
+        "name": "compatible_state",
+        "passed": false,
+        "reason": "counterparty status is 'restricted'"
+      },
+      {
+        "name": "within_scope",
+        "passed": true,
+        "reason": "action is within delegated scope"
+      },
+      {
+        "name": "consequence_bounded",
+        "passed": true,
+        "reason": "consequence class is recognized and bounded"
+      },
+      {
+        "name": "execution_integrity",
+        "passed": true,
+        "reason": "execution matches evaluated action"
+      },
+      {
+        "name": "correctable",
+        "passed": true,
+        "reason": "correction or challenge path remains available"
+      }
+    ],
+    "runtime_admissible": false
+  },
+  "scenario_id": "financial_transaction_state_change",
+  "static_authorization_system": {
+    "decision": "APPROVE",
+    "defective_reliance": true,
+    "defective_reliance_prevented": false,
+    "explanation": "static system approved because action was permissible at classification time",
+    "failed_predicates": [
+      "compatible_state"
+    ],
+    "failure_modes": [
+      "Dynamic Classification Failure",
+      "Reliance Without Admissibility",
+      "Context or State Incompatibility"
+    ],
+    "predicate_results": [],
+    "runtime_admissible": null
+  },
+  "title": "Counterparty becomes restricted after initial permissibility classification."
+}

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "runtime-admissibility-experiment"
+version = "1.0.0"
+description = "A reproducible experiment demonstrating Dynamic Classification Failure and runtime admissibility."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Arkadiy Miteiko", email = "am@veraxis.io" },
+  { name = "Ignacio Adrian Lerer", email = "adrian@lerer.com.ar" }
+]
+keywords = ["runtime admissibility", "institutional reliance", "Dynamic Classification Failure", "computational law", "AI governance"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6", "mypy>=1.10"]
+
+[project.scripts]
+runtime-admissibility = "runtime_admissibility.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+mypy_path = "src"
