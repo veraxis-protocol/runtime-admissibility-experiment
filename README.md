@@ -14,6 +14,20 @@ The primary demonstrated failure mode is **Dynamic Classification Failure (DCF)*
 
 ---
 
+## Role in Open Institutional Computation
+
+**Category:** Open Institutional Computation  
+**This component:** Research into the runtime currentness/admissibility boundary — the point at which a prior permissibility classification stops being sufficient for institutional reliance  
+**Upstream:** An authority envelope, evidentiary basis and institutional state established outside this repository through authorized institutional interpretation and admission; the Veraxis reference path for that upstream problem is [OIC — Open Institutional Compiler](https://github.com/veraxis-protocol/Institutional-Compiler)  
+**Downstream:** A formal criterion by which runtime and enforcement systems may be evaluated for defective reliance  
+**Canonical category thesis:** https://github.com/veraxis-protocol/institutional-continuity/blob/main/THESIS.md
+
+The distinction this repository formalizes — static authorization versus runtime admissibility — is a distinction *within* the field, not a claim about it. `RA(x,t)` takes the current authority envelope `A_t` as an input. It evaluates whether valid authority exists at the moment of reliance; it does not establish that authority, interpret the governing source that constitutes it, or perform institutional admission.
+
+Architectural role does not imply production readiness; this is a research repository accompanying a paper, and its scenarios, predicates and results define the exact demonstrated scope.
+
+---
+
 ## Core formal claim
 
 Institutional reliance on a machine-generated action requires runtime admissibility at the moment of reliance:
